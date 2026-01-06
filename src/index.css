@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 40% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 13%;
+
+    --primary: 213 68% 30%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 50% 96%;
+    --secondary-foreground: 213 68% 30%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 220 15% 50%;
+
+    --accent: 199 100% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 213 68% 30%;
+
+    --radius: 0.75rem;
+
+    /* Custom SOLEMATE colors */
+    --solemate-blue: 213 68% 30%;
+    --solemate-light-blue: 199 100% 36%;
+    --solemate-navy: 220 60% 15%;
+    --solemate-orange: 27 95% 55%;
+    --solemate-gray: 220 15% 50%;
+    --solemate-light: 210 50% 98%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 40% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 40% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 40% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 199 100% 50%;
+    --primary-foreground: 220 40% 8%;
+
+    --secondary: 220 40% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 40% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 213 68% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 40% 18%;
+    --input: 220 40% 18%;
+    --ring: 199 100% 50%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold text-primary text-center;
+  }
+
+  .section-desc {
+    @apply text-muted-foreground text-center max-w-2xl mx-auto mt-4;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium 
+           hover:opacity-90 transition-all duration-300 inline-flex items-center gap-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-full font-medium 
+           hover:bg-primary hover:text-primary-foreground transition-all duration-300;
+  }
+
+  .card-service {
+    @apply bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 
+           border border-border/50 hover:-translate-y-1;
+  }
+
+  .work-item {
+    @apply bg-solemate-light rounded-2xl p-8 text-center hover:shadow-lg transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply text-foreground/80 hover:text-primary transition-colors duration-200 font-medium;
+  }
+
+  .nav-link-active {
+    @apply text-primary font-semibold;
+  }
+}
+
+@layer utilities {
+  .bg-solemate-light {
+    background-color: hsl(var(--solemate-light));
+  }
+
+  .text-solemate-orange {
+    color: hsl(var(--solemate-orange));
+  }
+
+  .bg-gradient-hero {
+    background: linear-gradient(135deg, hsl(var(--solemate-light)) 0%, hsl(0 0% 100%) 100%);
+  }
+}
