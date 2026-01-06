@@ -244,25 +244,38 @@ const FlatFootCalculator = () => {
 
         {/* Instructions */}
         <div className="max-w-5xl mx-auto mt-8 bg-card rounded-xl p-6 border border-border">
-          <h4 className="font-bold text-foreground mb-3">Hướng dẫn đo:</h4>
-          <ul className="space-y-2 text-muted-foreground">
-            <li className="flex items-start gap-2">
-              <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-medium flex-shrink-0">1</span>
-              <span>Đứng thẳng trên một tờ giấy trắng và vẽ viền bàn chân</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-medium flex-shrink-0">2</span>
-              <span>Đo chiều rộng phần hẹp nhất ở giữa bàn chân (A)</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-medium flex-shrink-0">3</span>
-              <span>Đo chiều rộng phần rộng nhất ở gót chân (B)</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary text-sm font-medium flex-shrink-0">4</span>
-              <span>Chỉ số PI = A / B. Chỉ số càng cao nghĩa là nguy cơ bàn chân bẹt càng lớn</span>
-            </li>
-          </ul>
+          <h4 className="font-bold text-foreground mb-3">Hướng dẫn tự thu thập số đo tại nhà</h4>
+          <p className="text-muted-foreground mb-4">
+            Để có kết quả chính xác, bạn cần chuẩn bị giấy trắng, mực (mực dấu hoặc sơn nước) và thực hiện theo các bước sau:
+          </p>
+          <div className="space-y-4">
+            <div>
+              <h5 className="font-semibold text-primary mb-2">Bước 1: Tạo dấu chân (Footprint)</h5>
+              <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+                <li><strong>Chuẩn bị:</strong> Đặt tờ giấy trắng lên một mặt phẳng cứng và khô.</li>
+                <li><strong>Lấy mực:</strong> Ngồi xuống và bôi mực hoặc sơn đều lên toàn bộ lòng bàn chân của bạn.</li>
+                <li><strong>Tạo dấu:</strong> Đứng thẳng lên tờ giấy, dồn đều trọng lượng cơ thể lên cả hai chân (mỗi chân chịu khoảng 50% trọng lượng).</li>
+                <li><strong>Lưu ý quan trọng:</strong> Hãy hơi khuỵu đầu gối khoảng 30 độ khi đang đứng trên giấy để mô phỏng áp lực lên vòm chân giống như khi bạn đang bước đi.</li>
+                <li><strong>Hoàn tất:</strong> Nhấc chân thẳng lên để tránh làm nhòe dấu chân.</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h5 className="font-semibold text-primary mb-2">Bước 2: Xác định các thông số đo đạc</h5>
+              <p className="text-muted-foreground mb-2">Sử dụng thước kẻ và bút để đo trực tiếp trên dấu chân (đơn vị tính: cm, quy đổi từ mm nếu cần):</p>
+              <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+                <li><strong>Đường tham chiếu:</strong> Kẻ một đường thẳng tiếp tuyến nối mép trong gót chân và mép trong phần xương bàn chân trước.</li>
+                <li><strong>Số đo A (Vùng vòm):</strong> Xác định điểm giữa của đường tiếp tuyến vừa kẻ, từ điểm đó kẻ một đường vuông góc cắt ngang qua dấu chân. Chiều dài đoạn thẳng này (phần hẹp nhất ở giữa bàn chân) là A.</li>
+                <li><strong>Số đo B (Vùng gót):</strong> Kẻ một đường vuông góc với đường tiếp tuyến tại điểm tiếp xúc ở gót chân. Chiều dài đoạn thẳng này (phần rộng nhất của gót chân) là B.</li>
+              </ul>
+            </div>
+
+            <div className="bg-primary/5 p-4 rounded-lg mt-2">
+              <p className="text-sm text-muted-foreground">
+                <strong>Mẹo nhỏ:</strong> Để kết quả chính xác nhất, bạn nên thực hiện phép đo cho cả hai chân vì chỉ số vòm chân có thể khác nhau giữa chân trái và chân phải.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
