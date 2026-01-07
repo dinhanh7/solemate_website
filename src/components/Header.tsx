@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="top-0 left-0 right-0 z-[100] bg-background/95 backdrop-blur-sm border-b border-border/50">
+    <header className="top-0 left-0 right-0 z-[100] bg-[#1C3D7A] backdrop-blur-sm border-b border-border/20">
       <div className="container flex items-center justify-between h-20">
         {/* Logo */}
         <a href="#!" className="flex items-center">
@@ -30,7 +30,7 @@ const Header = () => {
             <a
               key={link.label}
               href={link.href}
-              className="nav-link"
+              className="text-white/90 hover:text-white transition-colors duration-200 font-medium"
             >
               {link.label}
             </a>
@@ -41,7 +41,7 @@ const Header = () => {
         <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
           <SheetTrigger asChild className="md:hidden">
             <button
-              className="p-2"
+              className="p-2 text-white"
               aria-label="Toggle menu"
               style={{ visibility: isMenuOpen ? 'hidden' : 'visible' }}
             >
@@ -52,7 +52,7 @@ const Header = () => {
             {/* Close button */}
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary"
+              className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary text-foreground"
               aria-label="Close menu"
             >
               <Menu className="h-5 w-5" />
