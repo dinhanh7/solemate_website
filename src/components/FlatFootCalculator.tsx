@@ -10,6 +10,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import huongDanDoImage from "@/assets/huong_dan_do.jpg";
 
 const FlatFootCalculator = () => {
   const [age, setAge] = useState("");
@@ -221,7 +222,7 @@ const FlatFootCalculator = () => {
                       <div className="flex items-center justify-center">
                         <div className="rounded-xl overflow-hidden shadow-lg border border-border w-full">
                           <img
-                            src="/src/assets/huong_dan_do.jpg"
+                            src={huongDanDoImage}
                             alt="Hướng dẫn đo bàn chân"
                             className="w-full h-full object-cover"
                           />
