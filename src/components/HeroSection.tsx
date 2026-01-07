@@ -34,10 +34,10 @@ const HeroSection = () => {
                 alt="Điều trị bàn chân bẹt với lót giày chuyên dụng"
                 className="rounded-3xl shadow-2xl w-full object-cover"
               />
-              <div className="absolute -bottom-6 -left-6 bg-card p-4 rounded-2xl shadow-lg border border-border/50">
+              {/* <div className="absolute -bottom-6 -left-6 bg-card p-4 rounded-2xl shadow-lg border border-border/50">
                 <p className="text-sm text-muted-foreground">Khách hàng hài lòng</p>
                 <p className="text-2xl font-bold text-primary">1000+</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import FlatFootCalculator from "@/components/FlatFootCalculator";
 import ServiceSection from "@/components/ServiceSection";
 import WorkProcessSection from "@/components/WorkProcessSection";
 import TechnologySection from "@/components/TechnologySection";
-import TeamSection from "@/components/TeamSection";
 import BlogSection from "@/components/BlogSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -19,7 +18,6 @@ const Index = () => {
         <ServiceSection />
         <WorkProcessSection />
         <TechnologySection />
-        <TeamSection />
         <BlogSection />
         <CTASection />
       </main>

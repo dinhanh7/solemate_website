@@ -1,6 +1,6 @@
 import { ClipboardCheck, Stethoscope } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import serviceImage from "@/assets/hero-image.jpg";
+import serviceImage from "@/assets/giaiphap.png";
 
 const services = [
 	{
