@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container flex items-center justify-between h-20">
         {/* Logo */}
         <a href="#!" className="flex items-center">
-          <img src={logoImage} alt="SOLEMATE" className="h-10 md:h-12" />
+          <img src={logoImage} alt="SOLEMATE" className="h-16 md:h-20" />
         </a>
 
         {/* Desktop Navigation */}
@@ -60,7 +60,7 @@ const Header = () => {
 
             <nav className="flex flex-col gap-6 mt-8">
               <a href="#!" className="flex items-center mb-4">
-                <img src={logoImage} alt="SOLEMATE" className="h-10" />
+                <img src={logoImage} alt="SOLEMATE" className="h-16" />
               </a>
               {navLinks.map((link) => (
                 <a
