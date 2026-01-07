@@ -31,8 +31,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Liên kết</h4>
             <ul className="space-y-2 text-background/70 text-sm">
-              <li><a href="#!" className="hover:text-background transition-colors">Trang chủ</a></li>
-              <li><a href="#service" className="hover:text-background transition-colors">Dịch vụ</a></li>
+              <li><a href="#dudoan" className="hover:text-background transition-colors">Dự đoán bàn chân bẹt</a></li>
+              <li><a href="#solution" className="hover:text-background transition-colors">Giải pháp</a></li>
               <li><a href="#quytrinh" className="hover:text-background transition-colors">Quy trình</a></li>
               <li><a href="#khac" className="hover:text-background transition-colors">Khác</a></li>
             </ul>
@@ -40,7 +40,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Dịch vụ</h4>
+            <h4 className="font-semibold mb-4">Giải pháp</h4>
             <ul className="space-y-2 text-background/70 text-sm">
               <li><a href="#!" className="hover:text-background transition-colors">Bán lót giày</a></li>
               <li><a href="#!" className="hover:text-background transition-colors">Chẩn đoán</a></li>

@@ -19,10 +19,10 @@ const services = [
 
 const ServiceSection = () => {
 	return (
-		<section id="service" className="py-20 bg-background">
+		<section id="solution" className="py-20 bg-background">
 			<div className="container">
 				<div className="text-center mb-16">
-					<h2 className="section-heading">Dịch vụ của chúng tôi</h2>
+					<h2 className="section-heading">Giải pháp của chúng tôi</h2>
 					<p className="section-desc">
 						Chúng mong muốn giúp bạn cải thiện một cách tốt nhất hội chứng bàn chân
 						bẹt
@@ -63,7 +63,7 @@ const ServiceSection = () => {
 						))}
 
 						<div className="pt-4 pl-4">
-							<Button className="btn-primary">Xem tất cả dịch vụ</Button>
+							<Button className="btn-primary">Xem tất cả giải pháp</Button>
 						</div>
 					</div>
 				</div>
